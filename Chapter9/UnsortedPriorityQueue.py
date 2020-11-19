@@ -5,7 +5,7 @@
 
 代码段9-2 : 使用未排序列表实现的优先级队列
 """
-from .PriorityQueueBase import PriorityQueueBase
+from .PriorityQueueBase_abc import PriorityQueueBase
 
 
 class UnsortedPriorityQueue(PriorityQueueBase):

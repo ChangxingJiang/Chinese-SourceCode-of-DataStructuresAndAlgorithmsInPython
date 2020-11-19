@@ -1,17 +1,17 @@
 # -*-coding:UTF-8 -*-
 
 """
-使用基于数组的堆实现的适应性优先级队列（独立的）
+使用基于数组的堆实现的适应性优先级队列（非继承的）
 """
 
 
-class AdaptableHeapPriorityQueue():
+class MyHeapq():
     """使用基于数组的堆实现的适应性优先级队列"""
 
     # -------------------- 嵌套的定位器类 --------------------
     class _Item:
         """轻量的、嵌套的元组类"""
-        __slots__ = "key", "value", "index"
+        __slots__ = "key", "value"
 
         def __init__(self, k, v):
             self.key = k

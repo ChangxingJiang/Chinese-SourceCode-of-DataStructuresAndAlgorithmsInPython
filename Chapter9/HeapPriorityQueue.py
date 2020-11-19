@@ -11,7 +11,7 @@
 1. 将部分静态方法增加@staticmethod装饰器
 """
 
-from .PriorityQueueBase import PriorityQueueBase
+from .PriorityQueueBase_abc import PriorityQueueBase
 
 
 class HeapPriorityQueue(PriorityQueueBase):
